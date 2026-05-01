@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculus Random Question Tracker</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <div id="StartScreen">
+            <h1>Please enter the range(s) of homework problem numbers.</h1>
+            <br><br><br><br>
+            <div id="range1">
+                <input id="firstP" type="number" placeholder="First Problem">
+                <input id="lastP" type="number" placeholder="Last Problem">
+                <select name="qSpecs" id="qSpec">
+                    <option value="all">All Questions</option>
+                    <option value="odd">Only Odd</option>
+                    <option value="even">Only Even</option>
+                </select>
+            </div>
+            <br>
+            
+            <div id="range2">
+                <input id="firstP2" type="number" placeholder="First Problem">
+                <input id="lastP2" type="number" placeholder="Last Problem">
+                <select name="qSpecs" id="qSpec2">
+                    <option value="all">All Questions</option>
+                    <option value="odd">Only Odd</option>
+                    <option value="even">Only Even</option>
+                </select>
+                <br>
+            </div>
+
+            <div id="range3">
+                <input id="firstP3" type="number" placeholder="First Problem">
+                <input id="lastP3" type="number" placeholder="Last Problem">
+                <select name="qSpecs" id="qSpec3">
+                    <option value="all">All Questions</option>
+                    <option value="odd">Only Odd</option>
+                    <option value="even">Only Even</option>
+                </select>
+                <br>
+            </div>
+
+            <div id="range4">
+                <input id="firstP4" type="number" placeholder="First Problem">
+                <input id="lastP4" type="number" placeholder="Last Problem">
+                <select name="qSpecs" id="qSpec4">
+                    <option value="all">All Questions</option>
+                    <option value="odd">Only Odd</option>
+                    <option value="even">Only Even</option>
+                </select>
+                <br>
+            </div>
+
+            <div id="range5">
+                <input id="firstP5" type="number" placeholder="First Problem">
+                <input id="lastP5" type="number" placeholder="Last Problem">
+                <select name="qSpecs" id="qSpec5">
+                    <option value="all">All Questions</option>
+                    <option value="odd">Only Odd</option>
+                    <option value="even">Only Even</option>
+                </select>
+                <br>
+            </div>
+
+
+            <input id="individuals" type="text" placeholder="Ex: 1, 5, 23, 82">
+
+            <input id="emptyTextInput" type="text">
+
+            <br><br>
+
+            <!-- <button id="AddRange">Add Range</button>
+            <button id="RemoveRange">Remove Range</button> 
+            add option for all, odd, and even-->
+            
+            <button id="newRange" onclick="newRange()">New Range (max: 5)</button>
+            <button id="individualNums" onclick="individualNums()">Add Individual Numbers</button>
+
+            <br><br>
+
+            <button id="ContinueButton" onclick="StartSite()">Continue</button>
+            
+        </div>
+        
+        <div id="ScreenScreen">
+            <!-- Progress bar at top -->
+            <!-- Button to get random number -->
+            <div id="emptyProgressBar">
+                <p></p>
+            </div>
+            <div id="completedProgressBar">
+                <p></p>
+            </div>
+            <div id="progressBarOutline">
+                <p id="displayCount">0 / 0</p>
+            </div>
+            <div id="almostDone">
+                <p></p>
+            </div>
+
+            <br><br><br><br><br><br><br>
+            <div id="displayBox">
+                <p id="pNum">Please press the button.</p>
+            </div>
+
+            <button id="RandomQButton" onclick="RandomNumber()">Random Question</button>
+            <button id="FinishQuestion" onclick="finishQuestion()">Next Question</button>
+            <button id="SkipQuestion" onclick="skipQuestion()">Skip Question</button>
+            <button id="FinishAssignment" onclick="finishAssignment()">Finish Assignment</button>
+
+            <button id="timerButton" onclick="toggleTimer()">Show Timer</button>
+            <div id="timerDisplay">
+                <h2 id="time">0:00</h2>
+                <button id="startTimer" onclick="startTimer()">Start</button>
+                <button id="stopTimer" onclick="stopTimer()">Stop</button>
+                <button id="resetTimer" onclick="resetTimer()">Reset</button>
+            </div>
+
+
+        </div>
+
+        <div id="congrats">
+            <p>All of the problems are completed. Congratulations, you survived!</p>
+        </div>
+    </body>
+</html>
+
+
+
