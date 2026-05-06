@@ -139,8 +139,6 @@ function finishQuestion(){
     percentageVar = (completedQuestions / totalQuestions)*80;
     document.getElementById("completedProgressBar").style.width = percentageVar + "%";
     document.getElementById("displayCount").innerHTML = completedQuestions + " / " + totalQuestions;
-    // Remove current number from list
-    // Hide div displaying number
 }
 
 function skipQuestion(){
