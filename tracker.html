@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Calculus Random Question Tracker</title>
+        <title>Homework Problem Tracker</title>
 
         <link rel="stylesheet" href="styles.css">
         <script src="script.js"></script>
@@ -18,7 +18,7 @@
                 <input id="firstP" type="number" placeholder="First Problem">
                 <input id="lastP" type="number" placeholder="Last Problem">
                 <select name="qSpecs" id="qSpec">
-                    <option value="all">All Questions</option>
+                    <option value="all">All Problems</option>
                     <option value="odd">Only Odd</option>
                     <option value="even">Only Even</option>
                 </select>
@@ -29,7 +29,7 @@
                 <input id="firstP2" type="number" placeholder="First Problem">
                 <input id="lastP2" type="number" placeholder="Last Problem">
                 <select name="qSpecs" id="qSpec2">
-                    <option value="all">All Questions</option>
+                    <option value="all">All Problems</option>
                     <option value="odd">Only Odd</option>
                     <option value="even">Only Even</option>
                 </select>
@@ -40,7 +40,7 @@
                 <input id="firstP3" type="number" placeholder="First Problem">
                 <input id="lastP3" type="number" placeholder="Last Problem">
                 <select name="qSpecs" id="qSpec3">
-                    <option value="all">All Questions</option>
+                    <option value="all">All Problems</option>
                     <option value="odd">Only Odd</option>
                     <option value="even">Only Even</option>
                 </select>
@@ -51,7 +51,7 @@
                 <input id="firstP4" type="number" placeholder="First Problem">
                 <input id="lastP4" type="number" placeholder="Last Problem">
                 <select name="qSpecs" id="qSpec4">
-                    <option value="all">All Questions</option>
+                    <option value="all">All Problems</option>
                     <option value="odd">Only Odd</option>
                     <option value="even">Only Even</option>
                 </select>
@@ -62,7 +62,7 @@
                 <input id="firstP5" type="number" placeholder="First Problem">
                 <input id="lastP5" type="number" placeholder="Last Problem">
                 <select name="qSpecs" id="qSpec5">
-                    <option value="all">All Questions</option>
+                    <option value="all">All Problems</option>
                     <option value="odd">Only Odd</option>
                     <option value="even">Only Even</option>
                 </select>
@@ -81,7 +81,7 @@
             add option for all, odd, and even-->
             
             <button id="newRange" onclick="newRange()">New Range (max: 5)</button>
-            <button id="individualNums" onclick="individualNums()">Add Individual Numbers</button>
+            <button id="individualNums" onclick="individualNums()">Add Individual Problems</button>
 
             <br><br>
 
@@ -107,12 +107,12 @@
 
             <br><br><br><br><br><br><br>
             <div id="displayBox">
-                <p id="pNum">Please press the button.</p>
+                <p id="pNum">Press the button to begin.</p>
             </div>
 
-            <button id="RandomQButton" onclick="RandomNumber()">Random Question</button>
-            <button id="FinishQuestion" onclick="finishQuestion()">Next Question</button>
-            <button id="SkipQuestion" onclick="skipQuestion()">Skip Question</button>
+            <button id="RandomQButton" onclick="RandomNumber()">Random Problem</button>
+            <button id="FinishQuestion" onclick="finishQuestion()">Next Problem</button>
+            <button id="SkipQuestion" onclick="skipQuestion()">Skip Problem</button>
             <button id="FinishAssignment" onclick="finishAssignment()">Finish Assignment</button>
 
             <button id="timerButton" onclick="toggleTimer()">Show Timer</button>
